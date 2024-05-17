@@ -86,7 +86,7 @@ export default function Devices() {
     setData(dataJSON);
     setupCookies();
     getSensorsData(dataJSON);
-  }, [context.state.data]);
+  }, []);
 
   return (
     <Card variant="outlined" sx={{ width: "80%", height: "80%" }}>
