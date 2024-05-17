@@ -2,35 +2,38 @@ import ConnectButton from "@/components/connectButton";
 import ContextModule from "@/utils/contextModule";
 import { Button, ButtonGroup } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Header({ className }) {
   const context = React.useContext(ContextModule);
   return (
     <div className={className}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "row",
-          gap: "10px",
-        }}
-      >
-        <Image
-          src="/logo.webp"
-          alt="logo"
-          width={50}
-          height={50}
+      <LinK href="/" style={{ textDecoration: "none" }}>
+        <div
           style={{
-            border: "4px solid black",
-            borderRadius: "100px",
-            fontFamily: "iter",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "row",
+            gap: "10px",
           }}
-          priority
-        />
-        <h1>BoT Weave</h1>
-      </div>
+        >
+          <Image
+            src="/logo.webp"
+            alt="logo"
+            width={50}
+            height={50}
+            style={{
+              border: "4px solid black",
+              borderRadius: "100px",
+              fontFamily: "iter",
+            }}
+            priority
+          />
+          <h1>BoT Weave</h1>
+        </div>
+      </Link>
       <div
         style={{
           display: "flex",
