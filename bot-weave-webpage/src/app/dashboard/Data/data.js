@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useWeb3ModalAccount } from "@web3modal/ethers5/react";
-import { useContext, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 
 const columns = [
   { id: "sensor", label: "Sensor Tag", minWidth: 150, data: true },
@@ -25,12 +25,17 @@ export default function Data() {
   const { address } = useWeb3ModalAccount();
   const [loading, setLoading] = useState(false);
   const context = useContext(ContextModule);
-  const check = async () => {
+
+  const check = useCallback(async () => {
     setLoading(true);
     const data = await getObjectsData(address);
     context.setState({ data });
     setLoading(false);
-  };
+  }, [address, context, getObjectsData]);
+
+  useEffect(() => {
+    check();
+  }, []);
 
   return (
     <Card variant="outlined" sx={{ maxWidth: "100%" }}>

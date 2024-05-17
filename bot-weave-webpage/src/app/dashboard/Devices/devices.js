@@ -17,7 +17,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useWeb3ModalAccount } from "@web3modal/ethers5/react";
-import { Fragment, useContext, useEffect, useState } from "react";
+import { Fragment, useCallback, useContext, useEffect, useState } from "react";
 import MyGaugeChart from "./charts/gauge";
 import MyDetection from "./charts/detection";
 
@@ -49,12 +49,12 @@ export default function Devices() {
   const [sensorData, setSensorData] = useState({});
   const [addChart, setAddChart] = useState(0);
   const context = useContext(ContextModule);
-  const check = async () => {
+  const check = useCallback(async () => {
     setLoading(true);
     const data = await getObjectsData(address);
     context.setState({ data });
     setLoading(false);
-  };
+  }, [address, context, getObjectsData]);
 
   const handleChange = (_, newValue) => {
     setValue(newValue);
@@ -86,6 +86,10 @@ export default function Devices() {
     setData(dataJSON);
     setupCookies();
     getSensorsData(dataJSON);
+  }, [context.state.data]);
+
+  useEffect(() => {
+    check();
   }, []);
 
   return (
