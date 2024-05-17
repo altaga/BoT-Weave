@@ -35,10 +35,13 @@ export default function ApiKeys() {
   };
 
   const getApiKeys = async () => {
-    let apikey = await getCookie("apikey");
-    if (apikey) {
-      setApiKey(apikey);
-    }
+    getCookie("apikey")
+      .then((res) => {
+        setApiKey(res);
+      })
+      .catch(() => {
+        console.log("No API key found");
+      });
   };
 
   useEffect(() => {

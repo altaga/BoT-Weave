@@ -69,6 +69,13 @@ export default function Header({ className }) {
           >
             API Keys
           </Button>
+          <Button
+            disabled={context.state.page === 4}
+            onClick={() => context.setState({ page: 4 })}
+            style={{ fontWeight: "bold" }}
+          >
+            Emulator
+          </Button>
         </ButtonGroup>
       </div>
       <div>

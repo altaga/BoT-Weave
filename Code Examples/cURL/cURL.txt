@@ -1,0 +1,12 @@
+curl --location 'https://us-central1-iot-weave.cloudfunctions.net/addData' \
+--header 'Content-Type: application/json' \
+--data '{
+   "apikey":"YOU_API_KEY",
+    "dataIn":{
+        'key1': 'value',
+        'key2': 'value2',
+        'key3': 'value3'
+    },
+    "sensor":"YOUR_SENSOR_NAME",
+    "private":false 
+}'

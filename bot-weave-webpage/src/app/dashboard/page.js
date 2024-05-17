@@ -13,6 +13,7 @@ import Account from "./Account/account";
 import Data from "./Data/data";
 import Devices from "./Devices/devices";
 import Header from "./header";
+import Emulator from "./Emulator/emulator";
 
 export default function Home() {
   const { address, chainId, isConnected } = useWeb3ModalAccount();
@@ -55,6 +56,11 @@ export default function Home() {
       {context.state.page === 3 && (
         <div className={styles.main}>
           <ApiKeys />
+        </div>
+      )}
+      {context.state.page === 4 && (
+        <div className={styles.main}>
+          <Emulator />
         </div>
       )}
     </div>

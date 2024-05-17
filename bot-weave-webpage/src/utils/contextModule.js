@@ -4,7 +4,7 @@ import React, { createContext, useState } from "react";
 // Create context
 const ContextModule = createContext();
 
-const defaultState = { page: 0, data: [] };
+const defaultState = { page: 4, data: [] };
 
 // Context Provider Component
 const ContextProvider = ({ children }) => {
