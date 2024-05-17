@@ -90,7 +90,7 @@ export default function Account() {
             alignItems="flex-start"
           >
             <Typography gutterBottom variant="h6" component="div">
-              <Link href={`https://greenfieldscan.com/address/${address}`}>
+              <Link href={`https://greenfieldscan.com/address/${address}`} target="_blank" rel="noopener noreferrer" >
                 {address}
               </Link>
             </Typography>

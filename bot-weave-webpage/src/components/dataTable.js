@@ -56,7 +56,7 @@ export default function DataTable(props) {
                         <TableCell key={column.id} align={column.align}>
                           {column.data && value}
                           {column.url && (
-                            <Link target="_blank" rel="noopener" href={row.url}>
+                            <Link target="_blank" rel="noopener noreferrer" href={row.url}>
                               {value}
                             </Link>
                           )}
