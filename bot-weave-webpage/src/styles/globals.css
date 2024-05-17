@@ -1,0 +1,36 @@
+html,
+body {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.connect-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menuButton {
+  background-color: #f0b90b;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
