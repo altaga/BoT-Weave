@@ -2,7 +2,6 @@ import NoSSRWrapper from "@/components/noSSR";
 import "@/styles/globals.css";
 import { Kanit } from "next/font/google";
 import Providers from "../components/providers";
-import { ToastContainer } from "react-toastify";
 
 const font = Kanit({ weight: "400", subsets: ["latin"] });
 

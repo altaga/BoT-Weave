@@ -21,9 +21,9 @@ export default function Providers({ children }) {
   return (
     <ContextProvider>
       <ToastContainer />
-      <ThemeProvider theme={theme}>
-        <Web3Modal>{children}</Web3Modal>
-      </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Web3Modal>{children}</Web3Modal>
+        </ThemeProvider>
     </ContextProvider>
   );
 }
