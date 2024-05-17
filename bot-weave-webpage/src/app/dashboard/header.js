@@ -9,7 +9,7 @@ export default function Header({ className }) {
   const context = React.useContext(ContextModule);
   return (
     <div className={className}>
-      <LinK href="/" style={{ textDecoration: "none" }}>
+      <Link href="/" style={{ textDecoration: "none" }}>
         <div
           style={{
             display: "flex",
@@ -31,7 +31,7 @@ export default function Header({ className }) {
             }}
             priority
           />
-          <h1>BoT Weave</h1>
+          <h1 style={{ color: "black" }}>BoT Weave</h1>
         </div>
       </Link>
       <div
