@@ -11,7 +11,7 @@ export async function getObjectsData(address) {
   return new Promise(async (resolve, reject) => {
     try {
       const res = await client.object.listObjects({
-        bucketName: `${process.env.NEXT_PUBLIC_BUCKET_NAME}`,
+        bucketName: `bot-weave`,
         endpoint: "https://spmain.web3go.xyz",
         query: new URLSearchParams({ prefix: address }),
       });
