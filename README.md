@@ -192,6 +192,10 @@ Todos los datos que se manden a la plataforma deben de ser en formato JSON para 
         "key4": true
     }
 
+Dentro de las Cloud Functions subimos los datos como archivos con el siguiente codigo.
+
+[CODE](./Cloud%20Functions/addData/index.js)
+
 # IoT Examples:
 
 Como parte de ese proyecto hemos realizado 4 ejemplos de codigo con los cuales tu puedes realizar tus propios devices IoT, estos estan realizados en los 4 lenguajes mas populares para el desarrollo de IoT.
