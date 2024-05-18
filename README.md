@@ -1,5 +1,8 @@
 # BoT-Weave
- BoT-Weave seamlessly integrates IoT data with BNB Greenfield.
+
+<img src="https://i.ibb.co/cvmPLp0/New-Project-3.png">
+
+BoT-Weave seamlessly integrates IoT data with BNB Greenfield.
 
 # Fast Links:
 
@@ -235,6 +238,8 @@ Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Ce
 
 # EPIC DEMO:
 
+
+
 # Commentary and final words:
 
 
@@ -242,3 +247,30 @@ Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Ce
 # References:
 
 # Table of contents:
+
+- [BoT-Weave](#bot-weave)
+- [Fast Links:](#fast-links)
+- [Introduction:](#introduction)
+- [Problem:](#problem)
+- [Solution:](#solution)
+- [Connection Diagram:](#connection-diagram)
+- [Hardware Diagrams:](#hardware-diagrams)
+  - [Edge Driving Monitor:](#edge-driving-monitor)
+  - [Environment Monitor:](#environment-monitor)
+- [BoT Weave Platform:](#bot-weave-platform)
+  - [Connect Page:](#connect-page)
+  - [Account Page:](#account-page)
+  - [Devices:](#devices)
+    - [Gauge:](#gauge)
+    - [Detection:](#detection)
+  - [Data:](#data)
+  - [API Keys:](#api-keys)
+    - [Create API Key:](#create-api-key)
+  - [Emulator:](#emulator)
+- [IoT Examples:](#iot-examples)
+  - [Edge Driving Monitor:](#edge-driving-monitor-1)
+  - [Environment Sensor:](#environment-sensor)
+- [EPIC DEMO:](#epic-demo)
+- [Commentary and final words:](#commentary-and-final-words)
+- [References:](#references)
+- [Table of contents:](#table-of-contents)
