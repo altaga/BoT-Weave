@@ -9,15 +9,29 @@ Video Demo: [CLICK HERE](...pending)
 
 # Introduction:
 
+El mundo del IoT se encuentra en un auge sin precedentes. Miles de millones de dispositivos conectados generan un volumen masivo de datos en tiempo real, desde sensores industriales hasta dispositivos domésticos inteligentes. Esta información tiene un enorme potencial para transformar industrias, optimizar procesos y mejorar la calidad de vida.
 
+<img src="https://i.ibb.co/xJHtCSV/image.png">
 
 # Problem:
 
+El problema principal radica en aprovechar el valor de los datos del los devices IoT asi como garantizar su seguridad, integridad y escalabilidad.
 
+<img src="https://i.ibb.co/9ZLcFZq/image.png">
+
+Los enfoques tradicionales basados en servidores centralizados presentan varias desventajas:
+
+- Vulnerabilidades de seguridad: Los servidores centralizados son objetivos atractivos para los ciberataques.
+
+- Falta de escalabilidad: A medida que aumenta la cantidad de dispositivos IoT, la infraestructura centralizada puede verse sobrecargada, lo que dificulta el almacenamiento y procesamiento eficiente de los datos.
+
+- Costos elevados: La dependencia de servidores centralizados implica costos de infraestructura y mantenimiento continuos para las empresas.
+
+Para solucionar todos estos problemas creamos BoT Weave.
 
 # Solution:
 
-BoT Weave es una plataforma inovadora que facilita la captura de datos desde dispositivos IoT con la seguridad y la inmutabilidad de blockchain.
+BoT Weave es una plataforma inovadora ofrece una solución segura, escalable y rentable para la captura y gestión de datos IoT. Ademas de la inmutabilidad de blockchain.
 
 <img src="https://i.ibb.co/WBSXT1X/image-2-1.png">
 
@@ -199,7 +213,7 @@ Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Ce
     static const char* sensorName = "YOUR_SENSOR_NAME"; // Your Sensor Name
     static const bool privateFlag = false;              // Private or Public Data
 
-<img src="">
+<img src="https://i.ibb.co/7KZddjN/20240518-133958.jpg">
 
 ## Environment Sensor:
 
@@ -217,7 +231,7 @@ Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Ce
     static const char* sensorName = "YOUR_SENSOR_NAME"; // Your Sensor Name
     static const bool privateFlag = false;              // Private or Public Data
 
-<img src="">
+<img src="https://i.ibb.co/zVq8cpM/20240518-134055.jpg">
 
 # EPIC DEMO:
 
