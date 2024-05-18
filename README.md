@@ -24,11 +24,11 @@ El problema principal radica en aprovechar el valor de los datos del los devices
 
 Los enfoques tradicionales basados en servidores centralizados presentan varias desventajas:
 
-- Vulnerabilidades de seguridad: Los servidores centralizados son objetivos atractivos para los ciberataques.
+- Vulnerabilidades de seguridad: Los servidores centralizados son objetivos atractivos para los ciberataques.[1](#references)
 
 - Falta de escalabilidad: A medida que aumenta la cantidad de dispositivos IoT, la infraestructura centralizada puede verse sobrecargada, lo que dificulta el almacenamiento y procesamiento eficiente de los datos.
 
-- Costos elevados: La dependencia de servidores centralizados implica costos de infraestructura y mantenimiento continuos para las empresas.
+- Costos elevados: La dependencia de servidores centralizados implica costos de infraestructura y mantenimiento continuos para las empresas. [2](#references)
 
 Para solucionar todos estos problemas creamos BoT Weave.
 
@@ -245,6 +245,9 @@ Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Ce
 
 
 # References:
+
+1. https://www.techtarget.com/iotagenda/definition/IoT-security-Internet-of-Things-security
+2. https://www.techtarget.com/searchcio/news/366570542/Cloud-costs-continue-to-rise-in-2024
 
 # Table of contents:
 
