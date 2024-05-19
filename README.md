@@ -12,33 +12,33 @@ Video Demo: [CLICK HERE](...pending)
 
 # Introduction:
 
-El mundo del IoT se encuentra en un auge sin precedentes. Miles de millones de dispositivos conectados generan un volumen masivo de datos en tiempo real, desde sensores industriales hasta dispositivos domésticos inteligentes. Esta información tiene un enorme potencial para transformar industrias, optimizar procesos y mejorar la calidad de vida.
+The world of IoT is experiencing an unprecedented boom. Billions of connected devices generate a massive volume of data in real time, from industrial sensors to smart home devices. This information has enormous potential to transform industries, optimize processes and improve quality of life.
 
 <img src="https://i.ibb.co/xJHtCSV/image.png">
 
 # Problem:
 
-El problema principal radica en aprovechar el valor de los datos del los devices IoT asi como garantizar su seguridad, integridad y escalabilidad.
+The main problem lies in taking advantage of the value of the data from IoT devices as well as guaranteeing its security, integrity and scalability.
 
 <img src="https://i.ibb.co/9ZLcFZq/image.png">
 
-Los enfoques tradicionales basados en servidores centralizados presentan varias desventajas:
+Traditional approaches based on centralized servers have several disadvantages:
 
-- Vulnerabilidades de seguridad: Los servidores centralizados son objetivos atractivos para los ciberataques.[1](#references)
+- Security vulnerabilities: Centralized servers are attractive targets for cyber attacks.[1](#references)
 
-- Falta de escalabilidad: A medida que aumenta la cantidad de dispositivos IoT, la infraestructura centralizada puede verse sobrecargada, lo que dificulta el almacenamiento y procesamiento eficiente de los datos.
+- Lack of scalability: As the number of IoT devices increases, centralized infrastructure can become overloaded, making it difficult to efficiently store and process data.
 
-- Costos elevados: La dependencia de servidores centralizados implica costos de infraestructura y mantenimiento continuos para las empresas. [2](#references)
+- High costs: Reliance on centralized servers implies ongoing infrastructure and maintenance costs for companies. [2](#references)
 
-Para solucionar todos estos problemas creamos BoT Weave.
+To solve all these problems we created BoT Weave.
 
 # Solution:
 
-BoT Weave es una plataforma inovadora ofrece una solución segura, escalable y rentable para la captura y gestión de datos IoT. Ademas de la inmutabilidad de blockchain.
+BoT Weave is an innovative platform offering a secure, scalable and cost-effective solution for IoT data capture and management. In addition to the immutability of blockchain.
 
 <img src="https://i.ibb.co/WBSXT1X/image-2-1.png">
 
-A travez de BNB Greenfield podemos mantener la inmutabilidad, seguridad e incluso privacidad de los datos que nosotros subimos a la blockchain mediante los devices IoT.
+Through BNB Greenfield we can maintain the immutability, security and even privacy of the data that we upload to the blockchain through IoT devices.
 
 <img src="https://i.ibb.co/59dMPCy/image.png">
 
@@ -46,71 +46,71 @@ A travez de BNB Greenfield podemos mantener la inmutabilidad, seguridad e inclus
 
 <img src="https://i.ibb.co/HFtF7vS/Diagram-drawio.png">
 
-- Sensores: Todos los sensores que se conecten a nuestra Gateway y estos solo podran subir datos a BoT Weave mediante una APIKEY.
+- Sensors: All sensors that connect to our Gateway and these will only be able to upload data to BoT Weave using an APIKEY.
 
-- Cloud Gateway: Un esquema comun para controlar datos desde IoT sensors es el uso de Gateways, esta comunicacion desde los sensores a la Gateway es atravez de HTTPS para mantener la seguridad en la comunicacion. [Cloud Functions](./Cloud%20Functions/)
+- Cloud Gateway: A common scheme to control data from IoT sensors is the use of Gateways, this communication from the sensors to the Gateway is through HTTPS to maintain security in the communication. [Cloud Functions](./Cloud%20Functions/)
 
-- DCellar: Utilizamos el servicio de DCellar para poder realizar la subida de datos de los devices IoT como archivos a la blockchain de Greenfield y sus API para obtener los archivos hacia la plataforma web.
+- DCellar: We use the DCellar service to upload data from IoT devices as files to the Greenfield blockchain and its APIs to obtain the files to the web platform.
 
-- BoT Weave: Nuetra plataforma nos permite crear y gestionar las API Keys. Ademas de poder visualizar los datos subidos a Greenfield y los datos de los sensores en tiempo real.
+- BoT Weave: Our platform allows us to create and manage API Keys. In addition to being able to view the data uploaded to Greenfield and the sensor data in real time.
 
 # Hardware Diagrams:
 
-Al ser una plataforma de IoT agregamos dos dispositivos y sus especificaciones como ejemplo para mostrar que la plataforma es funcional.
+Being an IoT platform, we added two devices and their specifications as an example to show that the platform is functional.
 
 <img src="https://i.ibb.co/S3KRT2X/Image-3.png">
 
-NOTA: la plataforma no esta limitada a estos dos devices, solo son una guia rapida para que puedas implementar tus propios devices.
+NOTE: the platform is not limited to these two devices, they are only a quick guide so you can implement your own devices.
 
 ## Edge Driving Monitor:
 
 <img src="https://i.ibb.co/xsstC9K/Edge-Driving-drawio.png">
 
-- ESP32: Mediante este microcontrolador decodificamos las lecturas del sensor del Grove Vision AI V2 mediante I2C y ademas manejamos el cifrado de la request a la API de BoT Weave mediante HTTPS.
+- ESP32: Using this microcontroller we decode the readings from the Grove Vision AI V2 sensor through I2C and we also handle the encryption of the request to the BoT Weave API through HTTPS.
 
-- Grove Vision AI V2: Este sensor no permite cargar un modelo de inferencia de AI creado con Edge Impulse y correrlo de forma independiente del microcontrolador. Asi como poder leerlo desde el microcontrolador mediante I2C.
-
+- Grove Vision AI V2: This sensor does not allow loading an AI inference model created with Edge Impulse and running it independently of the microcontroller. As well as being able to read it from the microcontroller using I2C.
+  
 ## Environment Monitor:
 
 <img src="https://i.ibb.co/Lx52MJ0/Environment-Sensor-drawio.png">
 
-- ESP32: Mediante este microcontrolador decodificamos las lecturas del sensor Grove SHT40 y ademas manejamos el cifrado de la request a la API de BoT Weave mediante HTTPS.
+- ESP32: Using this microcontroller we decode the readings from the Grove SHT40 sensor and also handle the encryption of the request to the BoT Weave API through HTTPS.
 
-- SHT40: Este sensor permite la lectura de datos de Temperatura y Humedad relativa en el ambiente mediante protocolo I2C.
+- SHT40: This sensor allows the reading of Temperature and Relative Humidity data in the environment using the I2C protocol.
 
 # BoT Weave Platform:
 
-Nuestra plataforma web provee todas las herramientas para facilitar a los usuarios le creacion y desarollo de devices IoT conectados a la Blockchain gracias a BNB Greenfield con DCellar.
+Our web platform provides all the tools to facilitate users' creation and development of IoT devices connected to the Blockchain thanks to BNB Greenfield with DCellar.
 
 <img src="https://i.ibb.co/k3Wf6C6/Image.png">
 
 ## Connect Page:
 
-La pagina de conexion es muy sencilla gracias a Web3Modal, el cual es un componente de WalletConnect que permite realizar operaciones y gestion de las wallets con la plataforma.
+The connection page is very simple thanks to Web3Modal, which is a component of WalletConnect that allows you to carry out operations and manage wallets with the platform.
 
 <img src="https://i.ibb.co/N2BHJVv/Screenshot-2024-05-18-121310.png">
 
-Somos compatibles con todas las wallets populares de mercado, sin embargo esta tiene que tener configurada correctamente BNB Greefield Mainnet.
+We are compatible with all popular wallets on the market, however it must have BNB Greefield Mainnet configured correctly.
 
 <img src="https://i.ibb.co/WDFjpr3/Screenshot-2024-05-18-121321.png">
 
-Para inicar sesion deberas realizar una sign de nuestro mensaje de inicio de sesion para confirmar tu identidad y ownership de la address.
+To log in you must take a sig from our login message to confirm your identity and ownership of the address.
 
 <img src="https://i.ibb.co/JFxp4GB/Screenshot-2024-05-18-121353.png">
 
 ## Account Page:
 
-La account page es la primera pagina que todos los usuarios van a poder visualizar una vez hagan login a nuestra dApp, en esta podras ver un resumen de tu cuenta, tanto el balance en BNB Greenfield, los devices que esten subiendo datos a la plataforma y la cantidad de archivos.
+The account page is the first page that all users will be able to view once they log in to our dApp, in this you will be able to see a summary of your account, both the balance in BNB Greenfield, the devices that are uploading data to the platform and the number of files.
 
 <img src="https://i.ibb.co/QCvKThk/Screenshot-2024-05-18-121412.png">
 
 ## Devices:
 
-La pagina de devices nos permite visualizar los datos enviados desde los devices IoT hacia la plataforma, por ahora nuestra pagina tiene dos tipos de graficas configurables, Gauge y Detection.
+The devices page allows us to view the data sent from the IoT devices to the platform, for now our page has two types of configurable graphs, Gauge and Detection.
 
 ### Gauge:
 
-En la seccion de key, tendras que escribir la key que hayas utilizado para mandar los datos IoT hacia la plataforma, en este caso el environment sensor manda los datos como un JSON y estos datos se pueden configurar como valores absolutos o porcentajes.
+In the key section, you will have to write the key that you have used to send the IoT data to the platform, in this case the environment sensor sends the data as a JSON and this data can be configured as absolute values or percentages.
 
 <img src="https://i.ibb.co/R3JFj7V/Screenshot-2024-05-18-121449.png">
 
@@ -121,11 +121,11 @@ Data Format:
         "hum": 52.96086121
     }
 
-Puedes usar las keys que quieras, como mencionamos anteriormente, esta solo es un ejemplo, pero puedes mandar los datos numericos que quieras, ya sean integer or float.
+You can use the keys you want, as we mentioned before, this is just an example, but you can send the numerical data you want, whether integer or float.
 
 ### Detection:
 
-Esta chart nos permite decodificar los datos detectados por un sensor AI. En este caso se utilizo la key **Detection**
+This chart allows us to decode the data detected by an AI sensor. In this case the **Detection** key was used
 
 <img src="https://i.ibb.co/hm39c4q/Screenshot-2024-05-18-121439.png">
 
@@ -135,7 +135,7 @@ Data Format:
         "detection": 1
     }
 
-Nuevamente esta key se selecciono de forma arbitraria, puedes mandarlos datos con la key que prefieras, sin embargo debes de mandar los datos de detecciones mediante numeros consecutivos iniciando desde 0.
+Again, this key was selected arbitrarily, you can send the data with the key you prefer, however you must send the detection data using consecutive numbers starting from 0.
 
     0 -> Cars
     1 -> Motorcycle
@@ -143,11 +143,11 @@ Nuevamente esta key se selecciono de forma arbitraria, puedes mandarlos datos co
 
 ## Data:
 
-En esta pagina podremos ver todos lo datos que los devices hayan enviado a la plataforma, con esto podremos visualizar previamente los datos que se hayan mandado a la platforma y asi debuggear que estos sean correctos.
+On this page we can see all the data that the devices have sent to the platform, with this we can previously view the data that has been sent to the platform and thus debug that it is correct.
 
 <img src="https://i.ibb.co/GHshMFf/Screenshot-2024-05-18-121459.png">
 
-Los datos pueden visualizarse en el explorer de BNB Greenfield o directamente abrir el archivo.
+The data can be viewed in the BNB Greenfield explorer or directly open the file.
 
 BNB Greenfield Scan:
 
@@ -159,31 +159,31 @@ File Directly:
 
 ## API Keys:
 
-La pagina de API Kesys nos permite gestionar las APIKeys activas en la plataforma, asi como rotar las APIKeys para mejorar la seguridad. Esta se genera atravez de una firma de la wallet.
+The API Keys page allows us to manage active API Keys on the platform, as well as rotate APIKeys to improve security. This is generated through a wallet signature.
 
 ### Create API Key:
 
-Lo primero que tenemos que hacer es crear nuestra primera API Key.
+The first thing we have to do is create our first API Key.
 
 <img src="https://i.ibb.co/xgv6dSf/Screenshot-2024-05-18-125704.png">
 
-Posterior a presionar el boton para crear una API Key tendras que firmar el mensaje de creacion.
+After pressing the button to create an API Key you will have to sign the creation message.
 
 <img src="https://i.ibb.co/vVfv4LZ/Screenshot-2024-05-18-125720.png">
 
-Finalmente si todo sale bien, obtendras tu API Key.
+Finally, if everything goes well, you will get your API Key.
 
 <img src="https://i.ibb.co/0VjHM69/Screenshot-2024-05-18-125755.png">
 
-Una vez tengas tu API Key, podras utilizarla en cualquiera de los [Code Examples](./Code%20Examples/) que tenemos en el repositorio.
+Once you have your API Key, you can use it in any of the [Code Examples](./Code%20Examples/) that we have in the repository.
 
 ## Emulator:
 
-El emulador es unicamente con fines de testing, tendras que tener una API Key ya creada para que este funcione ya que va a consumir tu API Key.
+The emulator is for testing purposes only, you will have to have an API Key already created for it to work since it will consume your API Key.
 
 <img src="https://i.ibb.co/8sjVxSD/Screenshot-2024-05-18-121520.png">
 
-Todos los datos que se manden a la plataforma deben de ser en formato JSON para visualizarlos en la seccion de Charts.
+All data sent to the platform must be in JSON format to be displayed in the Charts section.
 
     {
         "key1": "value1",
@@ -192,27 +192,27 @@ Todos los datos que se manden a la plataforma deben de ser en formato JSON para 
         "key4": true
     }
 
-Dentro de las Cloud Functions subimos los datos como archivos con el siguiente codigo.
+Within the Cloud Functions we upload the data as files with the following code.
 
 [CODE](./Cloud%20Functions/addData/index.js)
 
 # IoT Examples:
 
-Como parte de ese proyecto hemos realizado 4 ejemplos de codigo con los cuales tu puedes realizar tus propios devices IoT, estos estan realizados en los 4 lenguajes mas populares para el desarrollo de IoT.
+As part of this project we have made 4 code examples with which you can make your own IoT devices, these are made in the 4 most popular languages for IoT development.
 
 [Code Examples](./Code%20Examples/)
 
-A su vez dejamos los esquemas y codigos de 2 devices en particular que construimos nosotros para el demo.
+At the same time, we leave the schematics and codes of 2 particular devices that we built for the demo.
 
 ## Edge Driving Monitor:
 
-Este device tiene como fin decodificar los datos detectados desde el Grove Vision AI V2 y los manda a BNB Greenfield, mediante nuestra API.
+The purpose of this device is to decode the data detected from the Grove Vision AI V2 and send it to BNB Greenfield, through our API.
 
 [DEVICE CODE](./Device%20Examples/Edge%20Driving%20Monitor/)
 
 <img src="https://i.ibb.co/xsstC9K/Edge-Driving-drawio.png">
 
-Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Certs.h](./Device%20Examples/Edge%20Driving%20Monitor/certs.h)
+To make it work you must complete your WiFi data and API Key in [Certs.h](./Device%20Examples/Edge%20Driving%20Monitor/certs.h)
 
     static const char* ssid     = "YOUR_SSID";          // Your WiFi SSID
     static const char* password = "YOUR_PASSWORD";      // Your WiFi Password
@@ -224,13 +224,13 @@ Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Ce
 
 ## Environment Sensor:
 
-Este device tiene como fin leer los datos detectados desde el STH40, una vez realizado esto, se suben a BNB Greenfield, mediante nuestro servicio.
+The purpose of this device is to read the data detected from the STH40, once this is done, it is uploaded to BNB Greenfield, through our service.
 
 [DEVICE CODE](./Device%20Examples/Edge%20Driving%20Monitor/)
 
 <img src="https://i.ibb.co/Lx52MJ0/Environment-Sensor-drawio.png">
 
-Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Certs.h](./Device%20Examples/Environment%20Sensor/certs.h)
+To make it work you must complete your WiFi data and API Key in [Certs.h](./Device%20Examples/Environment%20Sensor/certs.h)
 
     static const char* ssid     = "YOUR_SSID";          // Your WiFi SSID
     static const char* password = "YOUR_PASSWORD";      // Your WiFi Password
@@ -245,6 +245,13 @@ Para hacer que funcione deberas completar con tus datos de WiFi y API Key en [Ce
 
 
 # Commentary and final words:
+
+Why do we need DePIN and and a blockchain of things?
+
+This is the main question, According to a Gartner study, blockchain technology will add $3.1 trillion in business value by 2030. The most exciting development is how these two technologies come together. Because of the nature of blockchain and IoT, the two are an obvious match. Combining them unlocks a series of possibilities that could propel the next big thing. Businesses can be transformed by sending your IoT data to an immutable blockchain ledger for added accountability, security and trust.
+
+And well BNB chain recognizes that as one of the main tracks is developing an IoT system with BNB greenfield.
+We think the current implementation more than solves most of the problems and showcases a great integration of IoT devices witth BNB Greenfield.
 
 
 
