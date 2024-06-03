@@ -8,7 +8,7 @@ BoT-Weave seamlessly integrates IoT data with BNB Greenfield.
 
 WebPage: [CLICK HERE](https://bot-weave.vercel.app/)
 
-Video Demo: [CLICK HERE](...pending)
+Video Demo: [CLICK HERE](https://youtu.be/VQ9dRoZv-eI)
 
 # Introduction:
 
