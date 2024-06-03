@@ -2,6 +2,7 @@ import NoSSRWrapper from "@/components/noSSR";
 import "@/styles/globals.css";
 import { Kanit } from "next/font/google";
 import Providers from "../components/providers";
+import { Analytics } from "@vercel/analytics/react"
 
 const font = Kanit({ weight: "400", subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={font.className}>
         <NoSSRWrapper>
           <Providers>{children}</Providers>
+          <Analytics />
         </NoSSRWrapper>
       </body>
     </html>
