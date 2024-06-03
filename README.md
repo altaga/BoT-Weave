@@ -240,8 +240,6 @@ To make it work you must complete your WiFi data and API Key in [Certs.h](./Devi
 
 <img src="https://i.ibb.co/zVq8cpM/20240518-134055.jpg">
 
-# EPIC DEMO:
-
 
 
 # Commentary and final words:
