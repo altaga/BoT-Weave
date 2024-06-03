@@ -1,4 +1,4 @@
-# BoT-Weave
+# BoTWeave
 
 <img src="https://i.ibb.co/cvmPLp0/New-Project-3.png">
 
